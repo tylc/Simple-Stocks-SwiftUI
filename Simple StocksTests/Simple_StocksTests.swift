@@ -8,7 +8,7 @@
 import XCTest
 @testable import Simple_Stocks
 
-final class Simple_StocksTests: XCTestCase {
+final class SimpleStocksTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -32,5 +32,24 @@ final class Simple_StocksTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
+    
+    func testGetStocksVM() throws {
+        /*
+        let getStocksVM: StockListViewModel = StockListViewModel()
+        var isCreated: Bool = false
+        var isCreatedSecond = false
+        
+        if let !getStocksVM.stockList.isEmpty {
+            isCreated = true
+        }
+        
+        if !getStocksVM.stockViewModels.isEmpty {
+            isCreatedSecond = true
+        }
+        
+        XCTAssertEqual(isCreated, true)
+        XCTAssertEqual(isCreatedSecond, true)
+*/
+    }
 }
+

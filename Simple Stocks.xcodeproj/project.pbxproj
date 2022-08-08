@@ -14,6 +14,23 @@
 		C013673628996E5B00AE83F7 /* Simple_StocksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013673528996E5B00AE83F7 /* Simple_StocksTests.swift */; };
 		C013674028996E5B00AE83F7 /* Simple_StocksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013673F28996E5B00AE83F7 /* Simple_StocksUITests.swift */; };
 		C013674228996E5B00AE83F7 /* Simple_StocksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013674128996E5B00AE83F7 /* Simple_StocksUITestsLaunchTests.swift */; };
+		C01367502899732D00AE83F7 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013674F2899732D00AE83F7 /* Stock.swift */; };
+		C01367512899732D00AE83F7 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013674F2899732D00AE83F7 /* Stock.swift */; };
+		C01367552899737B00AE83F7 /* AppContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01367542899737B00AE83F7 /* AppContants.swift */; };
+		C01367562899737B00AE83F7 /* AppContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01367542899737B00AE83F7 /* AppContants.swift */; };
+		C01367592899747B00AE83F7 /* GetStocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01367582899747B00AE83F7 /* GetStocks.swift */; };
+		C013675A2899747B00AE83F7 /* GetStocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01367582899747B00AE83F7 /* GetStocks.swift */; };
+		C013675C2899748500AE83F7 /* GetNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013675B2899748500AE83F7 /* GetNews.swift */; };
+		C013675D2899748500AE83F7 /* GetNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013675B2899748500AE83F7 /* GetNews.swift */; };
+		C01367602899794400AE83F7 /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013675F2899794400AE83F7 /* New.swift */; };
+		C01367612899794400AE83F7 /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013675F2899794400AE83F7 /* New.swift */; };
+		C0C53ECE289AB5420030228A /* StockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C53ECD289AB5420030228A /* StockView.swift */; };
+		C0C53ED0289ACC550030228A /* NewsArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C53ECF289ACC550030228A /* NewsArticleView.swift */; };
+		C0C53ED3289ACD070030228A /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = C0C53ED2289ACD070030228A /* URLImage */; };
+		C0C53ED5289ACE970030228A /* NewsArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C53ED4289ACE970030228A /* NewsArticleViewModel.swift */; };
+		C0C89A72289A5FD600BDB174 /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C89A71289A5FD600BDB174 /* StockViewModel.swift */; };
+		C0C89A77289A643900BDB174 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C0C89A76289A643900BDB174 /* .swiftlint.yml */; };
+		C0C89A79289A668000BDB174 /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C89A78289A668000BDB174 /* StockListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +61,17 @@
 		C013673B28996E5B00AE83F7 /* Simple StocksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple StocksUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C013673F28996E5B00AE83F7 /* Simple_StocksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_StocksUITests.swift; sourceTree = "<group>"; };
 		C013674128996E5B00AE83F7 /* Simple_StocksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_StocksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C013674F2899732D00AE83F7 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		C01367542899737B00AE83F7 /* AppContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContants.swift; sourceTree = "<group>"; };
+		C01367582899747B00AE83F7 /* GetStocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStocks.swift; sourceTree = "<group>"; };
+		C013675B2899748500AE83F7 /* GetNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNews.swift; sourceTree = "<group>"; };
+		C013675F2899794400AE83F7 /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
+		C0C53ECD289AB5420030228A /* StockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockView.swift; sourceTree = "<group>"; };
+		C0C53ECF289ACC550030228A /* NewsArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleView.swift; sourceTree = "<group>"; };
+		C0C53ED4289ACE970030228A /* NewsArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleViewModel.swift; sourceTree = "<group>"; };
+		C0C89A71289A5FD600BDB174 /* StockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModel.swift; sourceTree = "<group>"; };
+		C0C89A76289A643900BDB174 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		C0C89A78289A668000BDB174 /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C53ED3289ACD070030228A /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +103,7 @@
 		C013671828996E5900AE83F7 = {
 			isa = PBXGroup;
 			children = (
+				C0C89A76289A643900BDB174 /* .swiftlint.yml */,
 				C013672328996E5900AE83F7 /* Simple Stocks */,
 				C013673428996E5B00AE83F7 /* Simple StocksTests */,
 				C013673E28996E5B00AE83F7 /* Simple StocksUITests */,
@@ -94,8 +124,14 @@
 		C013672328996E5900AE83F7 /* Simple Stocks */ = {
 			isa = PBXGroup;
 			children = (
-				C013672428996E5900AE83F7 /* Simple_StocksApp.swift */,
 				C013672628996E5900AE83F7 /* ContentView.swift */,
+				C0C53ECD289AB5420030228A /* StockView.swift */,
+				C0C53ECF289ACC550030228A /* NewsArticleView.swift */,
+				C0C89A70289A5FC500BDB174 /* ViewModel */,
+				C01367532899736F00AE83F7 /* Util */,
+				C01367522899736700AE83F7 /* Webservice */,
+				C013674E2899731800AE83F7 /* Model */,
+				C013672428996E5900AE83F7 /* Simple_StocksApp.swift */,
 				C013672828996E5A00AE83F7 /* Assets.xcassets */,
 				C013672A28996E5A00AE83F7 /* Preview Content */,
 			);
@@ -113,6 +149,7 @@
 		C013673428996E5B00AE83F7 /* Simple StocksTests */ = {
 			isa = PBXGroup;
 			children = (
+				C04E795128A103E400857754 /* UITest */,
 				C013673528996E5B00AE83F7 /* Simple_StocksTests.swift */,
 			);
 			path = "Simple StocksTests";
@@ -127,6 +164,49 @@
 			path = "Simple StocksUITests";
 			sourceTree = "<group>";
 		};
+		C013674E2899731800AE83F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C013674F2899732D00AE83F7 /* Stock.swift */,
+				C013675F2899794400AE83F7 /* New.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C01367522899736700AE83F7 /* Webservice */ = {
+			isa = PBXGroup;
+			children = (
+				C01367582899747B00AE83F7 /* GetStocks.swift */,
+				C013675B2899748500AE83F7 /* GetNews.swift */,
+			);
+			path = Webservice;
+			sourceTree = "<group>";
+		};
+		C01367532899736F00AE83F7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C01367542899737B00AE83F7 /* AppContants.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		C04E795128A103E400857754 /* UITest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITest;
+			sourceTree = "<group>";
+		};
+		C0C89A70289A5FC500BDB174 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C0C89A71289A5FD600BDB174 /* StockViewModel.swift */,
+				C0C89A78289A668000BDB174 /* StockListViewModel.swift */,
+				C0C53ED4289ACE970030228A /* NewsArticleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,12 +217,16 @@
 				C013671D28996E5900AE83F7 /* Sources */,
 				C013671E28996E5900AE83F7 /* Frameworks */,
 				C013671F28996E5900AE83F7 /* Resources */,
+				C0C89A73289A60F000BDB174 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Simple Stocks";
+			packageProductDependencies = (
+				C0C53ED2289ACD070030228A /* URLImage */,
+			);
 			productName = "Simple Stocks";
 			productReference = C013672128996E5900AE83F7 /* Simple Stocks.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +299,9 @@
 				Base,
 			);
 			mainGroup = C013671828996E5900AE83F7;
+			packageReferences = (
+				C0C53ED1289ACD070030228A /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = C013672228996E5900AE83F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C89A77289A643900BDB174 /* .swiftlint.yml in Resources */,
 				C013672C28996E5A00AE83F7 /* Preview Assets.xcassets in Resources */,
 				C013672928996E5A00AE83F7 /* Assets.xcassets in Resources */,
 			);
@@ -252,13 +340,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C0C89A73289A60F000BDB174 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C013671D28996E5900AE83F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C01367602899794400AE83F7 /* New.swift in Sources */,
+				C0C89A79289A668000BDB174 /* StockListViewModel.swift in Sources */,
+				C0C53ED5289ACE970030228A /* NewsArticleViewModel.swift in Sources */,
 				C013672728996E5900AE83F7 /* ContentView.swift in Sources */,
+				C01367592899747B00AE83F7 /* GetStocks.swift in Sources */,
 				C013672528996E5900AE83F7 /* Simple_StocksApp.swift in Sources */,
+				C0C53ECE289AB5420030228A /* StockView.swift in Sources */,
+				C013675C2899748500AE83F7 /* GetNews.swift in Sources */,
+				C0C53ED0289ACC550030228A /* NewsArticleView.swift in Sources */,
+				C01367502899732D00AE83F7 /* Stock.swift in Sources */,
+				C01367552899737B00AE83F7 /* AppContants.swift in Sources */,
+				C0C89A72289A5FD600BDB174 /* StockViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +385,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C01367562899737B00AE83F7 /* AppContants.swift in Sources */,
+				C013675D2899748500AE83F7 /* GetNews.swift in Sources */,
+				C013675A2899747B00AE83F7 /* GetStocks.swift in Sources */,
+				C01367512899732D00AE83F7 /* Stock.swift in Sources */,
+				C01367612899794400AE83F7 /* New.swift in Sources */,
 				C013673628996E5B00AE83F7 /* Simple_StocksTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +701,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C0C53ED1289ACD070030228A /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C0C53ED2289ACD070030228A /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0C53ED1289ACD070030228A /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C013671928996E5900AE83F7 /* Project object */;
 }
