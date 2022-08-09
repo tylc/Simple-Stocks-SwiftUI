@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var searchText = ""
-    @State var presentSheet = true
+    @State var presentSheet = false
     @ObservedObject var stockListViewModel: StockListViewModel = StockListViewModel()
     
     var body: some View {
@@ -19,19 +19,29 @@ struct ContentView: View {
                     ForEach(stockListViewModel.stockViewModels, id: \.self) { stockViewModel in
                         NavigationLink(value: stockViewModel) {
                             StockView(stockViewModel: stockViewModel)
-                                .accessibilityIdentifier("StockView")
                         }
+                        .accessibilityIdentifier("StockView")
                     }
                 }.searchable(text: $searchText)
+                
+                Spacer()
             }
-            .navigationTitle("Simple Stocks App")
+            .navigationTitle(Strings.navigationTitle)
             .navigationDestination(for: StockViewModel.self) { stockViewModel in
                 StockView(stockViewModel: stockViewModel)
             }
-            .sheet(isPresented: $presentSheet) {
+            .toolbar{
+                ToolbarItem(placement: .primaryAction, content:{
+                    Button(action: {
+                        presentSheet = true
+                    }) {
+                        Image(systemName: "newspaper")
+                    }.accessibilityIdentifier("showButton")
+                })
+            }
+            .sheet(isPresented: $presentSheet, onDismiss: { presentSheet = false }) {
                 NewsArticleView()
                     .presentationDetents([.fraction(0.2), .medium, .large])
-                    .accessibilityIdentifier("SheetNewsArticle")
             }
         }
     }

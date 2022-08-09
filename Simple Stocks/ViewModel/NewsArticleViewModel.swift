@@ -17,9 +17,9 @@ class NewsArticleViewModel: ObservableObject {
     }
     
     private func fetchNews() {
-        getNews.getNews(completion: { value in
+        getNews.fetch(completion: { value in
             DispatchQueue.main.async {
-                self.articleList = value
+                self.articleList = value as? [New]
             }
         }, errorCompletion: {_ in
             print("error, handle is a must. But we'll do it later")

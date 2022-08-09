@@ -13,18 +13,6 @@ protocol StockViewModelOutputs {
 
 class StockViewModel: StockViewModelOutputs, ObservableObject, Hashable {
     
-    var identifier: String {
-            return UUID().uuidString
-        }
-        
-        public func hash(into hasher: inout Hasher) {
-            return hasher.combine(identifier)
-        }
-        
-        public static func == (lhs: StockViewModel, rhs: StockViewModel) -> Bool {
-            return lhs.identifier == rhs.identifier
-        }
-    
     @Published var stock: Stock
     
     init(_ stock: Stock) {
@@ -37,4 +25,16 @@ class StockViewModel: StockViewModelOutputs, ObservableObject, Hashable {
         return stock.symbol.uppercased()
     }
     
+    // MARK: Hashable methods
+    var identifier: String {
+        return UUID().uuidString
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        return hasher.combine(identifier)
+    }
+    
+    public static func == (lhs: StockViewModel, rhs: StockViewModel) -> Bool {
+        return lhs.identifier == rhs.identifier
+    }
 }

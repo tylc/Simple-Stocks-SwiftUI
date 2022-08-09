@@ -27,9 +27,9 @@ class StockListViewModel: StockListViewModelOutputs, ObservableObject {
     }
     
     private func fetchStocks() {
-            getStocks.getStocks(completion: { value in
+            getStocks.fetch(completion: { value in
                 DispatchQueue.main.async {
-                    self.stockList = value
+                    self.stockList = value as? [Stock]
                     // TODO: create and add viewModels
                     self.stockList?.map {
                         self.stockViewModels.append(StockViewModel($0))

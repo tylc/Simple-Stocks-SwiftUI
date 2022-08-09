@@ -7,13 +7,9 @@
 
 import Foundation
 
-struct GetStocks {
-    // func getStocks (completion: @escaping ([Stock]?) -> Void) async throws {
-    
-    func getStocks (completion:@escaping([Stock]?) -> Void, errorCompletion: @escaping(String) -> Void) {
+struct GetStocks: WebServiceProtocol {
+    func fetch(completion: @escaping ([Any]?) -> Void, errorCompletion: @escaping (String) -> Void) {
         guard let url: URL = URL(string: Global.WebserviceURL.stocks) else { return }
-        // old way
-        
          URLSession.shared.dataTask(with: url) { data, _, error in
             guard error == nil else {
                 errorCompletion(Global.WebserviceError.errorResponse.rawValue)

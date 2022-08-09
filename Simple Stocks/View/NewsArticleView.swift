@@ -15,12 +15,12 @@ struct NewsArticleView: View {
         HStack {
             VStack(alignment: .leading) {
                 
-                Text("Top News")
+                Text(Strings.NewsArticleView.newsTitle)
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(2)
                 
-                Text("From News")
+                Text(Strings.NewsArticleView.newsSubtitle)
                     .foregroundColor(Color.gray)
                     .font(.body)
                     .fontWeight(.bold)

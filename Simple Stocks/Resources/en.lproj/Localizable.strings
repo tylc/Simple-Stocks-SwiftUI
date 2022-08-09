@@ -1,0 +1,7 @@
+// MARK: Common
+"Navigation.Title" = "Simple Stocks App";
+"SearchBar.Text" = "Search";
+
+//// MARK: News article view
+"NewsArticle.Title" = "Top News";
+"NewsArticle.subTitle" = "From News";

@@ -8,7 +8,6 @@
 import Foundation
 
 enum Global {
-    // webservice
     enum WebserviceURL {
         static let stocks: String = "https://island-bramble.glitch.me/stocks"
         static let news: String = "https://island-bramble.glitch.me/top-news"
