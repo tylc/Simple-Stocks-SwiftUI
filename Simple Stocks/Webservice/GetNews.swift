@@ -10,14 +10,14 @@ import Foundation
 struct GetNews: WebServiceProtocol {
     func fetch (completion:@escaping([Any]?) -> Void, errorCompletion: @escaping(String) -> Void) {
         
-        guard let url: URL = URL(string: Global.WebserviceURL.stocks) else { return }
+        guard let url: URL = URL(string: Global.WebserviceURL.news) else { return }
          URLSession.shared.dataTask(with: url) { data, _, error in
             guard error == nil else {
                 errorCompletion(Global.WebserviceError.errorResponse.rawValue)
                 return
             }
             
-            guard let data = data else {
+            guard let data else {
                 errorCompletion(Global.WebserviceError.errorData.rawValue)
                 return
             }

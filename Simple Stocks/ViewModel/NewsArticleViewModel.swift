@@ -7,7 +7,15 @@
 
 import Foundation
 
-class NewsArticleViewModel: ObservableObject {
+protocol NewsArticleViewModelInputs {
+    func stringToURL(withString string: String) -> URL
+}
+
+protocol NewsArticleViewModelOutputs {
+    func numerOfItems() -> Int
+}
+
+class NewsArticleViewModel: NewsArticleViewModelOutputs, NewsArticleViewModelInputs, ObservableObject {
     var getNews: GetNews
     @Published var articleList: [New]?
     
@@ -26,7 +34,13 @@ class NewsArticleViewModel: ObservableObject {
         })
     }
     
-    // MARK: StockListViewModelOutputs
+    // MARK: NewsArticleViewModelInputs
+
+    func stringToURL(withString urlString: String) -> URL {
+        return URL(string: urlString)!
+    }
+    
+    // MARK: NewsArticleViewModelOutputs
     
     func numerOfItems() -> Int {
         return self.articleList?.count ?? 0

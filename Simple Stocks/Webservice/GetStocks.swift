@@ -16,7 +16,7 @@ struct GetStocks: WebServiceProtocol {
                 return
             }
             
-            guard let data = data else {
+            guard let data else {
                 errorCompletion(Global.WebserviceError.errorData.rawValue)
                 return
             }
